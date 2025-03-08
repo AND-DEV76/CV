@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi CV</title>
+  <!-- Vinculamos el CSS principal -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Barra lateral (sidebar) -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Logo">
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">Stack Tecnológico</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+
+    <!-- Sección "Home" o Hero -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hola, mi nombre es <span>Angel</span></h1>
+        <br>
+        <h2>Soy <span>Full Stack Developer y Database Administrator</span></h2>
+        <p>
+          Ingeniero en Sistemas enfocado en Desarrollo web y Administrador de Bases de Datos.
+          Destaco por mi organización, capacidad analítica y adaptación a nuevas tecnologías
+          para ofrecer soluciones eficientes e innovadoras.
+        </p>
+        <a href="#about" class="btn">Mas acerca de mi!!</a>
+      </div>
+      <div class="hero-image">
+        <!-- Ajusta la ruta de tu imagen de perfil -->
+        <img src="assets/img/15.png" alt="Foto de perfil" />
+      </div>
+    </section>
+
+    <!-- Sección About -->
+    <section class="about-section" id="about">
+      <h2>Stack Tecnológico</h2>
+      <p>Mi stack de tecnologías está en constante evolución.
+        Estas son las principales herramientas con las que desarrollo.</p>
+
+      <div class="skills-container">
+
+        <!-- Base de Datos -->
+        <div class="skill-card">
+          <div class="skill-header db">Base de Datos</div>
+          <div class="skill-content">
+            <div class="skill-item">
+              <img src="assets/img/sqlserver.png" alt="SQL Server">
+              <span>SQL Server</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/mysql.png" alt="MySQL">
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/posgress.png" alt="PostgreSQL">
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lenguajes de Programación -->
+        <div class="skill-card">
+          <div class="skill-header lang">Lenguajes de Programación</div>
+          <div class="skill-content">
+            <div class="skill-item">
+              <img src="assets/img/java.png" alt="Java">
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/py.png" alt="Python">
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/c.png" alt="C++">
+              <span>C++</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/javascr.png" alt="JavaScript">
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-card">
+          <div class="skill-header fw">Frameworks</div>
+          <div class="skill-content">
+            <div class="skill-item">
+              <img src="assets/img/spring.png" alt="Spring Boot">
+              <span>Spring Boot</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/flask.png" alt="Flask">
+              <span>Flask</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Otros (HTML, CSS, Bootstrap) -->
+        <div class="skill-card">
+          <div class="skill-header other">Otros</div>
+          <div class="skill-content">
+            <div class="skill-item">
+              <img src="assets/img/html.png" alt="HTML">
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/css.png" alt="CSS">
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/img/boostrap.png" alt="Bootstrap">
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección Services -->
+    <section class="services-section" id="services">
+      <h2>Mis Servicios</h2>
+      <div class="services-container">
+
+        <div class="service-card">
+          <img src="assets/img/dw.png" alt="Desarrollo Web" class="service-logo">
+          <div class="service-text">
+            <h3>Desarrollo Web y Software</h3>
+            <p>Creo aplicaciones web dinámicas, optimizadas y escalables utilizando tecnologías modernas.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/img/bd.png" alt="Bases de Datos" class="service-logo">
+          <div class="service-text">
+            <h3>Diseño y Gestión de Bases de Datos</h3>
+            <p>Diseño, optimizo y administro bases de datos eficientes para garantizar el mejor rendimiento.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/img/api.png" alt="Integración de APIs" class="service-logo">
+          <div class="service-text">
+            <h3>Integración de APIs y Servicios Web</h3>
+            <p>Implemento e integro APIs REST y servicios web para conectar sistemas de manera eficiente.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/img/segur.png" alt="Seguridad" class="service-logo">
+          <div class="service-text">
+            <h3>Seguridad y Autenticación</h3>
+            <p>Implemento autenticación de usuarios, cifrado de contraseñas y roles de acceso en aplicaciones.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/img/auto.png" alt="Automatización" class="service-logo">
+          <div class="service-text">
+            <h3>Automatización y Optimización</h3>
+            <p>Desarrollo scripts y soluciones automatizadas para mejorar el rendimiento y reducir el trabajo manual.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Agrega tarjetas o bloques de servicios -->
+    </section>
+
+
+
+
+    <!-- Sección Portfolio -->
+    <section class="portfolio-section" id="portfolio">
+      <h2>Proyectos Realizados</h2>
+
+      <div class="projects-container">
+
+
+        <!-- Proyecto 1 -->
+        <div class="project">
+          <h3>BASE DE DATOS</h3>
+          <p>Arquitectura y diseño de una base de datos robusta y
+            escalable para la gestión académica de un colegio, con 25 tablas interrelacionadas, 
+            optimizadas para SQL Server.</p>
+          <img src="assets/img/bd1.png" alt="Proyecto 1" class="thumbnail" onclick="openGallery('gallery1')">
+        </div>
+
+        <!-- Galería Modal para Proyecto 1 -->
+        <div id="gallery1" class="modal">
+          <span class="close" onclick="closeGallery('gallery1')">&times;</span>
+          <div class="modal-content">
+            <img src="assets/img/bd2.png" alt="Proyecto 1 - Imagen 1" onclick="openFullImage(this.src)">
+            <img src="assets/img/bd3.png" alt="Proyecto 1 - Imagen 2" onclick="openFullImage(this.src)">
+            <img src="assets/img/bd4.png" alt="Proyecto 1 - Imagen 3" onclick="openFullImage(this.src)">
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project">
+          <h3>AetherCubix</h3>
+          <p>Desarrollo integral de una plataforma web para una empresa especializada en cubos, 
+            implementando Java, Spring Boot y HTML para garantizar un rendimiento eficiente 
+            y una experiencia de usuario fluida.</p>
+          <img src="assets/img/ar1.png" alt="Proyecto 2" class="thumbnail" onclick="openGallery('gallery2')">
+        </div>
+
+        <!-- Galería Modal para Proyecto 2 -->
+        <div id="gallery2" class="modal">
+          <span class="close" onclick="closeGallery('gallery2')">&times;</span>
+          <div class="modal-content">
+            <img src="assets/img/ar1.png" alt="Proyecto 2 - Imagen 1" onclick="openFullImage(this.src)">
+            <img src="assets/img/ar2.png" alt="Proyecto 2 - Imagen 2" onclick="openFullImage(this.src)">
+            <img src="assets/img/ar3.png" alt="Proyecto 2 - Imagen 3" onclick="openFullImage(this.src)">
+          </div>
+        </div>
+
+
+        <!-- Proyecto 3 -->
+        <div class="project">
+          <h3>WEB Personal</h3>
+          <p>Creación de un portafolio web dinámico e interactivo para destacar mis habilidades y trayectoria 
+            profesional, utilizando HTML, CSS y JavaScript con un enfoque moderno y responsive.</p>
+          <img src="assets/img/logo.png" alt="Proyecto 3" class="thumbnail" onclick="openGallery('gallery3')">
+        </div>
+
+        <!-- Galería Modal para Proyecto 3 -->
+        <div id="gallery3" class="modal">
+          <span class="close" onclick="closeGallery('gallery3')">&times;</span>
+          <div class="modal-content">
+            <img src="assets/img/cv.png" alt="Proyecto 3 - Imagen 1" onclick="openFullImage(this.src)">
+            <img src="assets/img/cv1.png" alt="Proyecto 3 - Imagen 2" onclick="openFullImage(this.src)">
+            <img src="assets/img/cv2.png" alt="Proyecto 3 - Imagen 3" onclick="openFullImage(this.src)">
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Modal para ver imagen completa con navegación -->
+    <div id="fullImageModal" class="modal">
+      <span class="close" onclick="closeFullImage()">&times;</span>
+      <img id="fullImage" class="full-image">
+
+      <!-- Botones de navegación -->
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+
+    </section>
+
+
+
+    <!-- Sección Contact -->
+    <section class="contact-section" id="contact">
+      <h2>Contacto</h2>
+      <div class="contact-container">
+
+        <div class="contact-card">
+          <a href="tel:+50248402113">
+            <img src="assets/img/tel.png" alt="Teléfono" class="contact-logo">
+
+          </a>
+          <div class="contact-text">
+            <h3>Teléfono</h3>
+            <p><a href="tel:+50248402113">+502 48402113</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <a href="mailto:angeldev123xd@gmail.com">
+            <img src="assets/img/g.png" alt="Gmail" class="contact-logo">
+          </a>
+
+          <div class="contact-text">
+            <h3>Correo Electrónico</h3>
+            <p><a href="mailto:angeldev123xd@gmail.com">angeldev123xd@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <a href="https://linkedin.com/in/anglambrociofxd" target="_blank">
+            <img src="assets/img/linki.png" alt="LinkedIn" class="contact-logo">
+          </a>
+
+          <div class="contact-text">
+            <h3>LinkedIn</h3>
+            <p><a href="https://linkedin.com/in/anglambrociofxd" target="_blank">linkedin.com/in/anglambrociofxd</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <a href="https://github.com/AND-DEV76" target="_blank">
+            <img src="assets/img/git.png" alt="GitHub" class="contact-logo">
+          </a>
+
+          <div class="contact-text">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/AND-DEV76" target="_blank">github.com/AND-DEV76</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Opcional: enlazar JavaScript (solo si lo necesitas) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

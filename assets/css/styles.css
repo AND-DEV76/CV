@@ -29,7 +29,7 @@ body {
   justify-content: space-between; /* Espacia los elementos */
   padding: 10px 20px;
   box-shadow: 0px 2px 5px #00aaff;
-
+  z-index: 1000;
 }
 
 .hero-text p {
@@ -55,7 +55,32 @@ body {
   display: block; /* Asegura que se comporte como un bloque */
 }
 
+/* Botón Hamburguesa */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
+.close-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* Estilos para la navegación */
+.nav-menu {
+  display: flex;
+}
 
 .nav-menu ul {
   list-style: none;
@@ -65,13 +90,13 @@ body {
 }
 
 .nav-menu li {
-  margin-bottom: 20px;
+  margin: 0 15px;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -80,20 +105,41 @@ body {
   color: #00aaff;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
 
-.nav-menu ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 15px;
-  transition: 0.3s;
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .close-menu {
+    display: block;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
 }
-
-.nav-menu ul li a:hover {
-  color: #00aaff; /* Color de hover */
-}
-
-
 
 
 

@@ -4,29 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi CV</title>
+  <title>AND</title>
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
   <!-- Vinculamos el CSS principal -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
 
-  <!-- Barra lateral (sidebar) -->
-  <aside class="sidebar">
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo">
-    </div>
+ <!-- Barra lateral (sidebar) -->
+<aside class="sidebar">
+  <div class="logo">
+    <img src="assets/img/logo.png" alt="Logo">
+  </div>
+  <br>
 
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">Stack Tecnológico</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#portfolio">Portafolio</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </aside>
+  <button class="menu-toggle" id="open-menu">&#9776;</button> <!-- Botón para abrir menú -->
+  
+  <nav class="nav-menu" id="nav-menu">
+    <button class="close-menu" id="close-menu">&times;</button> <!-- Botón para cerrar menú -->
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">Stack Tecnológico</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#portfolio">Portafolio</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+</aside>
+
+
 
   <!-- Contenido principal -->
   <main class="main-content">

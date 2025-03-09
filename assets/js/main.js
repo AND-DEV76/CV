@@ -88,4 +88,11 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-  
+// barra adapatable 
+document.getElementById("open-menu").addEventListener("click", function () {
+  document.getElementById("nav-menu").classList.add("active");
+});
+
+document.getElementById("close-menu").addEventListener("click", function () {
+  document.getElementById("nav-menu").classList.remove("active");
+});

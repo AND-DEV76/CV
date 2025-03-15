@@ -1109,3 +1109,85 @@ section {
   transform: scale(1.1);
 }
 
+
+/* Estilo del formulario */
+.contact-form {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #00aaff;
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Cambiar color de fondo al pasar el cursor */
+.contact-form:hover {
+  background-color: white;
+  box-shadow: 0 4px 12px #00aaff;
+}
+
+/* Estilo del título */
+.contact-form h3 {
+  text-align: center;
+  color: #00aaff;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Cambiar color de título al hacer hover */
+.contact-form:hover h3 {
+  color: #005577;
+}
+
+/* Estilo de etiquetas */
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Cambiar color de etiquetas al hacer hover */
+.contact-form:hover label {
+  color: black;
+}
+
+/* Campos de entrada */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  color: white;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Cambiar color de fondo y texto de los campos cuando se hace hover en el formulario */
+.contact-form:hover input,
+.contact-form:hover textarea {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+/* Botón de envío */
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #0088cc;
+}

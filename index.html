@@ -13,26 +13,26 @@
 
 <body>
 
- <!-- Barra lateral (sidebar) -->
-<aside class="sidebar">
-  <div class="logo">
-    <img src="assets/img/logo.png" alt="Logo">
-  </div>
-  <br>
+  <!-- Barra lateral (sidebar) -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Logo">
+    </div>
+    <br>
 
-  <button class="menu-toggle" id="open-menu">&#9776;</button> <!-- Botón para abrir menú -->
-  
-  <nav class="nav-menu" id="nav-menu">
-    <button class="close-menu" id="close-menu">&times;</button> <!-- Botón para cerrar menú -->
-    <ul>
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">Stack Tecnológico</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#portfolio">Portafolio</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-  </nav>
-</aside>
+    <button class="menu-toggle" id="open-menu">&#9776;</button> <!-- Botón para abrir menú -->
+
+    <nav class="nav-menu" id="nav-menu">
+      <button class="close-menu" id="close-menu">&times;</button> <!-- Botón para cerrar menú -->
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">Stack Tecnológico</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
 
 
 
@@ -42,7 +42,7 @@
     <!-- Sección "Home" o Hero -->
     <section class="hero" id="home">
       <div class="hero-text">
-        <h1>Hola, mi nombre es <span>Angel</span></h1>
+        <h1>Hola, mi nombre es <span>Daniel Angel Ambrocio Coj</span></h1>
         <br>
         <h2>Soy <span>Full Stack Developer y Database Administrator</span></h2>
         <p>
@@ -209,7 +209,7 @@
         <div class="project">
           <h3>BASE DE DATOS</h3>
           <p>Arquitectura y diseño de una base de datos robusta y
-            escalable para la gestión académica de un colegio, con 25 tablas interrelacionadas, 
+            escalable para la gestión académica de un colegio, con 25 tablas interrelacionadas,
             optimizadas para SQL Server.</p>
           <img src="assets/img/bd1.png" alt="Proyecto 1" class="thumbnail" onclick="openGallery('gallery1')">
         </div>
@@ -227,8 +227,8 @@
         <!-- Proyecto 2 -->
         <div class="project">
           <h3>AetherCubix</h3>
-          <p>Desarrollo integral de una plataforma web para una empresa especializada en cubos, 
-            implementando Java, Spring Boot y HTML para garantizar un rendimiento eficiente 
+          <p>Desarrollo integral de una plataforma web para una empresa especializada en cubos,
+            implementando Java, Spring Boot y HTML para garantizar un rendimiento eficiente
             y una experiencia de usuario fluida.</p>
           <img src="assets/img/ar1.png" alt="Proyecto 2" class="thumbnail" onclick="openGallery('gallery2')">
         </div>
@@ -247,7 +247,7 @@
         <!-- Proyecto 3 -->
         <div class="project">
           <h3>WEB Personal</h3>
-          <p>Creación de un portafolio web dinámico e interactivo para destacar mis habilidades y trayectoria 
+          <p>Creación de un portafolio web dinámico e interactivo para destacar mis habilidades y trayectoria
             profesional, utilizando HTML, CSS y JavaScript con un enfoque moderno y responsive.</p>
           <img src="assets/img/logo.png" alt="Proyecto 3" class="thumbnail" onclick="openGallery('gallery3')">
         </div>
@@ -334,6 +334,25 @@
         </div>
 
       </div>
+
+      <br>
+      <!-- Sección de formulario de contacto -->
+      <div class="contact-form">
+        <h3>Envíanos un mensaje</h3>
+        <form action="https://formspree.io/f/xzzebnaa" method="POST">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required placeholder="Ingrese su Nombre">
+
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="Ingrese su Correo">
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
     </section>
 
 

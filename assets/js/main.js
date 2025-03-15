@@ -96,3 +96,42 @@ document.getElementById("open-menu").addEventListener("click", function () {
 document.getElementById("close-menu").addEventListener("click", function () {
   document.getElementById("nav-menu").classList.remove("active");
 });
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Capturar el formulario
+    const form = document.querySelector(".contact-form form");
+
+    form.addEventListener("submit", function (event) {
+      // Capturar los campos
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      
+      let valid = true;
+      let errorMessage = "";
+
+      // Verificar cada campo
+      if (name === "") {
+        errorMessage += "⚠️ El nombre no puede estar vacío.\n";
+        valid = false;
+      }
+      if (email === "") {
+        errorMessage += "⚠️ El correo no puede estar vacío.\n";
+        valid = false;
+      }
+      if (message === "") {
+        errorMessage += "⚠️ El mensaje no puede estar vacío.\n";
+        valid = false;
+      }
+
+      // Si hay errores, mostrar alerta y evitar el envío
+      if (!valid) {
+        alert(errorMessage);
+        event.preventDefault(); // Evita que el formulario se envíe
+      }
+    });
+  });
+

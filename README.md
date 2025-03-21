@@ -57,7 +57,7 @@ Se vincula una hoja de estilos CSS externa (styles.css).
 
 <aside class="sidebar">
   <div class="logo">
-    <img src="assets/img/logo.png" alt="Logo">
+    <img src="assets/img/lgo.png" alt="Logo">
   </div>
   <button class="menu-toggle" id="open-menu">&#9776;</button>
   <nav class="nav-menu" id="nav-menu">
@@ -88,7 +88,7 @@ Se incluyen botones para abrir y cerrar el menú en dispositivos móviles.
     <a href="#about" class="btn">Mas acerca de mi!!</a>
   </div>
   <div class="hero-image">
-    <img src="assets/img/15.png" alt="Foto de perfil" />
+    <img src="assets/img/5.png" alt="Foto de perfil" />
   </div>
 </section>
 

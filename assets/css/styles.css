@@ -12,6 +12,7 @@ body {
   color: #fff;
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 
@@ -1191,3 +1192,47 @@ section {
 .contact-form button:hover {
   background-color: #0088cc;
 }
+
+
+
+
+/*Footer*/
+
+main {
+  flex: 1;
+}
+
+/* Footer fijo abajo si la pantalla es más grande que el contenido */
+
+
+.site-footer {
+  position: relative;
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  height: 120px; /* Puedes ajustar la altura según tu gusto */
+}
+
+.footer-content-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-content-center p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-logo-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+
